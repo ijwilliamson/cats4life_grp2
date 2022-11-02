@@ -13,9 +13,26 @@ const Search = () => {
       );
       const data = await response.json();
       setCats(data);
+      let tempCatDetails = [];
+      for (let i = 0; i < data.length; i++) {
+        tempCatDetails.push({
+          name: faker.name.firstName(),
+          breed: faker.animal.cat(),
+          price: faker.commerce.price(),
+        });
+      }
+      console.log(tempCatDetails);
+      setCatDetails(tempCatDetails);
     }
+
+    
+
     getCats();
   }, []);
+
+  
+
+  
 
   return (
     <div className="main-container">
@@ -24,9 +41,9 @@ const Search = () => {
           <div className="cat-card-container">
             <div className="cat-card">
               <img className="cat-images" key={i} src={cat.url} alt="cat" />
-              <h3>{faker.name.firstName()}</h3>
-              <p>{faker.animal.cat()}</p>
-              <h4>£{faker.commerce.price()}</h4>
+              <h3>{catDetails[i].name}</h3>
+              <p>{catDetails[i].breed}</p>
+              <h4>£{catDetails[i].price}</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia, molestiae quas vel sint commodi repudiandae
