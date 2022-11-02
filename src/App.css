@@ -6,33 +6,29 @@
   /* border: 10px solid black; */
   height: 200px;
   width: auto;
-  background-color:grey;
+  background-color: grey;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-input {
-  
-  width:500px;
+.nav1 input {
+  width: 500px;
   height: 30px;
   border-radius: 5px;
-  
- 
 }
 
-p {
+.nav1 p {
   background-color: black;
   color: aliceblue;
   height: 35px;
   width: 130px;
   border-radius: 5px;
   margin-top: 10px;
-  
 }
 
-ul {
+.nav1 ul {
   display: flex;
   margin-left: 5px;
   text-decoration: none;
