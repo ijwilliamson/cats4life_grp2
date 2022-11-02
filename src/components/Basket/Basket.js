@@ -1,16 +1,26 @@
 import "./Basket.css";
 
 const Basket = (props) => {
-  //props basketState - array
-  //array items : price, image, id
+  //props 
+  //basketState - array
+  //visible - bool
+  //toggle - fn
 
   const buildBasketJSX = () => {
+   
+    if(typeof props.basketState === "undefined"){
+      // if the basketState does not exist then return no items
+      console.log("no items")
+      return (<div className="basketItems"><p>There are no cats in your basket</p></div>)
+    }
+
+    console.log(props.basketState)
     let total = 0;
     const basketJSX = props.basketState.map((item) => {
       total += item.price;
       return (
         <>
-          <div>
+          <div  className="basketItems">
             <div>{/* <image></image> */}</div>
             <div>{/* <price></price> */}</div>
           </div>
@@ -22,7 +32,24 @@ const Basket = (props) => {
     return basketJSX;
   };
 
-  return <div className="basket">{/* {buildBasketJSX} */}</div>;
+  const overlayClass = () =>{
+    return (props.visible) ? "overlay" : "overlay hidden" 
+  }
+
+  return (
+    <div className={overlayClass()}>
+      <div className="basket">
+        {buildBasketJSX()}
+        <div className="footer">
+        <button onClick={props.toggle}>Back to store</button>
+        <button className="primary">Checkout now</button>
+        
+      </div>
+      </div>
+      
+    </div>
+  
+  )
 };
 
 export default Basket;
