@@ -1,1 +1,112 @@
-<mxfile host="app.diagrams.net" modified="2022-11-02T13:53:01.170Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="kLalyuIB-AhESfaraEts" version="20.5.1" type="github"><diagram id="4QLZkowvjsxWIg_K8Mz_" name="Page-1">7Zpbc5s4FMc/jWd2H9oxYLD9GNtJmukm21lvp+3TjoJk0EZGjJBju59+JRA3icTUMcbd6UzTQYeLxY//uejAwJmvd7cMxOE9hYgM7CHcDZzFwLatkW0P5L8h3GeWsTPODAHDUB1UGpb4O1LGobJuMERJ7UBOKeE4rht9GkXI5zUbYIxu64etKKn/agwCZBiWPiCm9QuGPMysE3tc2j8gHIT5L1veNNuzBvnB6k6SEEC6rZic64EzZ5TybGu9myMi4eVcsvNuXthbTIyhiLc54e/5HfkYfLRc9nwfB2t49w98eKeu8gzIRt3wVRyr+fJ9DoHRTQSRvM5w4My2IeZoGQNf7t2Kxy5sIV8TMbLEpjmv/EcQ42hXMal53iK6RpztxSH5XlcxU6LJEW7LJzAaKVtYoW87ygjUUw+KS5dgxIZi8wOc8uddAWVQQlAoRw0p4yENaATIdWmd1TmWx/xBaazo/Ys43ys3ABtOW7JN6Ib56LUbUL4DWID4YUHIe3n1STFEAMfPdS85PXaD+hxwYVgiwPywP50qXToNwpwMG4Q5GnclTMcgtMBJTICc5QJw0LsvF4wUM3dsMrPsBmaTrpCNDGS3iF8KLsvTcDVIrBGX1VnsM0PfzYMYvxN/c0DII/CfBrZHxDxmj0xsBXLrCkKZlVNvFVHMHj6C5CnFnHDAUe+ci/yx17gf4ux1hXlixjqCJdqMog54k6B0FyGz9AFoPEW1EcvNhCMJL0YMi2kipkyfyvEh2Cu8Q3lhdir4E03kjfBdE77bFfypAf9zyvd6tZJV5U9F1zoygnQG1zKrzDyBD68CgKOfm++0d75mRsvCbxp4Zyrw9hxwPffiEpvlGtxyWHq0VUlLIEgSBLPJiP+khdH+F0yens0a2HoNbO1pZ2w9g63IWEuJ8besFPi9oWhgLC1c6crcJ5LgXQo+gil17JtFRB42QrQDYmGlRQ5lLYKH3Uv0cIf1R1WsWXurh60Wa9uc7Iqg3ZVsqwgYKIJqc+ET4RfYr8OrOwHaYf5V7ZHb36T9vatGi13lsMVeDV7EfXC5qyLiweWuWj4dXO5WHo77SmhvvSpWv/CJ4ohX1kqaNjw99GX3rc6q9nr0C+nBVhdPBsa4UKqf4rbfICmzmL0BT8ILZQeO5f6bFO5MqHBvTM1C4OyrVe0JjJsi6VmXBZZZmnbonaVHfqs65Im9M5fH/87ttMW7p5d8HbtdLsyOtRKJWX6tDiqxXA5LuaSj/aCPDOC0zAAXLkXrVBlAD1BdS9Fc811IUXGsfI+X4rSlFEe/pNiJFO1fUtRbMZrG2oqzLy1a2vrWdd3jtKi/WXT1BXDXWjTf11xQhn5RV4dfG15W7PKG+vrnSL30HrvM1l6nenk/tJy6ZizbO1TXyVGlJdtDsZd3mw7r1L0oneo51j5VjrXOrVOzlXoXQfyM4QbIk7MXgT5g0Ozs4cgnG4jMHXFIZQfbMGe9P90MypZ38a4R+w09hQNdBJDE2YdEafPvRG0FLX85bZt+hfEtfYUpXn33H77s/xxBcP9hPgHzv5YNX/50WBT9SFuhEozcaiiyWiUvo7A5Kpy0bR9mcae3LJdnNaWqke70baOHq/UtnO6iR6MWzQJ9GQqJVRz5ccP5q+1Bq2170HDaBom8/OJaB3XG7mAjObOc/KzesgzyVmsWemHTxy1nel/yJuR2i8hpNSA/4osrMSw/x8y0XX7U6lz/Bw==</diagram></mxfile>
+<mxfile host="65bd71144e">
+    <diagram id="4QLZkowvjsxWIg_K8Mz_" name="Page-1">
+        <mxGraphModel dx="1116" dy="524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-1" value="App" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="20" width="440" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="TCIlKgK15rvMpgmdI_dN-2" target="TCIlKgK15rvMpgmdI_dN-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-2" value="Cat Search" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="320" width="800" height="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-3" value="Display Data" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="570" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-4" value="Get Data" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="520" width="120" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-8" value="Click cat&lt;br&gt;use callBack" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="560" width="125" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-9" value="Use Effect" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="520" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-11" value="Search Again" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="590" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-14" value="Add to Basket" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="520" width="120" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-15" value="Basket&lt;br&gt;state passed as a prop" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="10" width="160" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-16" value="useState(basket)&lt;br&gt;Array of&lt;br&gt;catId and price" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="230" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-17" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="TCIlKgK15rvMpgmdI_dN-4" target="TCIlKgK15rvMpgmdI_dN-3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="630" as="sourcePoint"/>
+                        <mxPoint x="350" y="580" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-18" value="Faker for prices and location" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="710" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-19" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="TCIlKgK15rvMpgmdI_dN-18" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="630" as="sourcePoint"/>
+                        <mxPoint x="360" y="650" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-20" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="TCIlKgK15rvMpgmdI_dN-3" target="TCIlKgK15rvMpgmdI_dN-8" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="610" as="sourcePoint"/>
+                        <mxPoint x="350" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-21" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TCIlKgK15rvMpgmdI_dN-9" target="TCIlKgK15rvMpgmdI_dN-4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="610" as="sourcePoint"/>
+                        <mxPoint x="350" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-22" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TCIlKgK15rvMpgmdI_dN-11" target="TCIlKgK15rvMpgmdI_dN-4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="555" as="sourcePoint"/>
+                        <mxPoint x="150" y="590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-23" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="TCIlKgK15rvMpgmdI_dN-14" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="600" y="585" as="sourcePoint"/>
+                        <mxPoint x="350" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-24" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.013;entryY=0.126;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;" parent="1" source="TCIlKgK15rvMpgmdI_dN-7" target="TCIlKgK15rvMpgmdI_dN-15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="210" as="sourcePoint"/>
+                        <mxPoint x="350" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-25" value="Individual cat card&lt;br&gt;include&lt;br&gt;photo&lt;br&gt;price&lt;br&gt;add to basket icon" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="330" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="9ifzcNWyO4daMHC8aCRS-1" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="TCIlKgK15rvMpgmdI_dN-14" target="TCIlKgK15rvMpgmdI_dN-16" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="685" y="460" as="sourcePoint"/>
+                        <mxPoint x="560" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9ifzcNWyO4daMHC8aCRS-2" value="Show basket button" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="30" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9ifzcNWyO4daMHC8aCRS-3" value="UseState for cat data" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="330" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="TCIlKgK15rvMpgmdI_dN-7" value="FN - Callback&lt;br&gt;Add cat to basket state" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="150" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="shape=flexArrow;endArrow=none;html=1;rounded=0;entryX=0.013;entryY=0.126;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="TCIlKgK15rvMpgmdI_dN-16" target="TCIlKgK15rvMpgmdI_dN-7">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="620" y="270" as="sourcePoint"/>
+                        <mxPoint x="642.0799999999999" y="46.539999999999964" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
