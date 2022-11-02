@@ -2,21 +2,25 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 35px;
+  justify-content: space-around;
+  gap: 20px;
 
   max-width: 80%;
   margin: 75px auto;
 }
 
 .cat-card {
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
+  border: 1px solid #f7f4ff;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+
+  margin-bottom: 30px;
+  width: 350px;
 
   overflow: hidden;
 }
@@ -25,60 +29,150 @@
   object-fit: cover;
 
   height: 200px;
-  width: 300px;
+  width: 350px;
+}
+
+.cat-description-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 10px;
+  width: 88%;
 }
 
 .cat-description-name {
-  background-color: #1f0e64;
-  color: #f8f9fc;
+  color: #1f0e64;
   font-size: 26px;
   font-weight: 600;
   text-align: center;
 
-  width: 100%;
-  padding: 15px 0px 15px 0px;
+  padding: 0px;
 }
 
 .cat-description-breed {
-  background-color: #f6f4fc;
-  border-radius: 5px;
+  background-color: #e9e2fd;
+  border-radius: 8px;
 
   color: #1f0e64;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 
-  margin-top: 10px;
-  padding: 3px 7px;
+  padding: 3px 10px;
 }
 
-.cat-description-fee {
-  color: #4c24e1;
-  font-weight: 500;
-
-  margin: 7px 0px;
-}
 .cat-description-text {
-  color: rgb(26, 26, 26);
   font-size: 14px;
   text-align: justify;
+  margin: 10px 20px 20px;
+}
 
-  margin: 10px 20px;
+.line {
+  border: 1px solid #f7f4ff;
+  width: 100%;
+}
+
+.cat-description-mid {
+  display: flex;
+  flex-direction: column;
+
+  margin: 15px 0px;
+  width: 88%;
+}
+
+.cat-reasons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cat-description-mid-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.cat-reasons p {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.fa-cat {
+  color: #0700c4;
+}
+
+.fa-bowl-food {
+  color: #03ac13;
+}
+
+.heart {
+  color: #b90e0a;
+  transition: 300ms ease-in;
+}
+
+.cat-description-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 88%;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .cat-description-btn {
+  background-color: #3911ca;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
   border: none;
-  background-color: #1f0e64;
+  border-radius: 12px;
   cursor: pointer;
 
   color: #f8f9fc;
   font-size: 16px;
   font-weight: 600;
 
-  margin-top: 10px;
+  transition: 300ms ease-in;
+  padding: 10px 40px;
   height: 45px;
-  width: 100%;
 }
 
 .cat-description-btn:hover {
-  background-color: #3911ca;
+  background-color: #805dfd;
+  cursor: pointer;
+}
+
+.cat-description-fee {
+  color: #643feb;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cat-description-like {
+  border: none;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.01);
+  border: 0.5px solid #ece8f8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #b90e0a;
+  font-size: 20px;
+
+  transition: 300ms ease-in;
+  height: 40px;
+  width: 40px;
+}
+
+.cat-description-like:hover {
+  cursor: pointer;
+  background-color: #b90e0a;
+  border: 0.5px solid #b90e0a;
+
+  color: #fff;
 }
