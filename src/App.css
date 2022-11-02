@@ -3,62 +3,56 @@
   padding: 0px;
 }
 .cat {
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   padding: 3px;
 }
 .searchlogo {
-  width: 35px;
-  height: 33px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
   margin-left: -40px;
   opacity: 0.8;
 }
 .nav1 {
-  height: 200px;
+  height: 110px;
   width: auto;
   background-color:#4c24e1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0px;
 }
 
 input {
   padding-left: 10px;
+  margin-left: 20px;
   font-size: 16px;
-  width:500px;
-  height: 45px;
+  width:450px;
+  height: 42px;
   border-radius: 5px;
 }
-.BTN {
-  cursor: pointer;
-  width: 300px;
-  height: 45px;
-  font-size: 30px;
-  display: flex;
-  justify-items: center;
-  margin-left: 100px;
-}
-.bas {
-  margin-left: 20px;
-  padding-left: 20px;
-  background:none;
-  padding-right: 20px;
-  font-weight: 800;
-}
-
-
 span {
-  
-  background-color: black;
-  color: aliceblue;
+  font-weight:bold;
+  font-size: 20px;
+  background-color: #1f0e64;
+  color:  #f8f9fc;
   height: 35px;
-  width: 150px;
+  width: 160px;
   text-align: center;
   border-radius: 5px;
   margin-top: 0px;
   padding-top: 11px;
-  margin-right: 0px;
-  
+  margin-right: -20px;
+  text-align: center;
+}
+.cartlogo {
+  cursor: pointer;
+  margin-top: 3px;
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
 }
 

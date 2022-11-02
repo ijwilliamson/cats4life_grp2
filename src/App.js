@@ -36,12 +36,13 @@ function App() {
         <span>Cats4Lyf</span>
         <input type="text"></input>
         <img className="searchlogo" src={SearchIcon} alt="sl"></img>
-        <div className="BTN">
-          <img src={CartIcon} alt="cart"></img>
-          <button className="bas" onClick={toggleBasket}>
-            Basket
-          </button>
-        </div>
+
+        <img
+          className="cartlogo"
+          onClick={toggleBasket}
+          src={CartIcon}
+          alt="cart"
+        ></img>
       </div>
       <Basket
         visible={basketVisible}
