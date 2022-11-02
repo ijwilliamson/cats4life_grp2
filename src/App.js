@@ -1,9 +1,23 @@
 import "./App.css";
 import Search from "./components/Search";
 import Basket from "./components/Basket/basket";
+import { useState } from "react";
 
 
 function App() {
+
+  // State to store the cats in the basket
+  const [basketItems, setBasketItems] = useState();
+  
+
+  const addToBasket = (cat) =>{
+    //function which is called by the search component to add the
+    // cat to the basket.
+    // The cat is passed as an object
+
+  }
+
+
   return (
 
     <div>
