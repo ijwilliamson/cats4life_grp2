@@ -1,5 +1,5 @@
-import React from "react";
 import { useState, useEffect } from "react";
+import { faker } from "@faker-js/faker";
 import "./Search.css";
 
 const Search = () => {
@@ -25,12 +25,13 @@ const Search = () => {
           <div className="cat-card-container">
             <div className="cat-card">
               <img className="cat-images" key={i} src={cat.url} alt="cat" />
-              <h3>Faker name</h3>
-              <h4>Faker price</h4>
+              <h3>{faker.name.firstName()}</h3>
+              <p>{faker.animal.cat()}</p>
+              <h4>£{faker.commerce.price()}</h4>
               <p>
-                Small description: Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Maxime mollitia, molestiae quas vel sint
-                commodi repudiandae consequuntur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                mollitia, molestiae quas vel sint commodi repudiandae
+                consequuntur voluptatum laborum numquam blanditiis.
               </p>
             </div>
           </div>
