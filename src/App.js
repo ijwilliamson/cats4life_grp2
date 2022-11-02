@@ -2,6 +2,7 @@ import "./App.css";
 import Search from "./components/Search";
 import Basket from "./components/Basket/Basket";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   // State to store the cats in the basket
@@ -24,6 +25,7 @@ function App() {
         </ul>
       </div>
       <Search />
+      <Footer />
     </div>
   );
 }
