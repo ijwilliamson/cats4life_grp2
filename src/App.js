@@ -7,6 +7,12 @@ import Footer from "./components/Footer";
 function App() {
   // State to store the cats in the basket
   const [basketItems, setBasketItems] = useState();
+  const [basketVisible, setBasketVisible] = useState(true);
+
+  const toggleBasket=()=> {
+    //Toggle the basket
+    setBasketVisible(!basketVisible)
+  }
 
   const addToBasket = (cat) => {
     //function which is called by the search component to add the
@@ -15,18 +21,21 @@ function App() {
   };
 
   return (
+    <>
+    <Basket visible={basketVisible} toggle={toggleBasket} basketState={basketItems}/>
     <div>
       <div className="nav1">
         <p>All Products</p>
         <input type="text"></input>
         <ul>
           <a href="#">Account</a>
-          <a href="#">Cart</a>
+          <a onClick={toggleBasket}>Cart</a>
         </ul>
       </div>
       <Search />
       <Footer />
     </div>
+    </>
   );
 }
 
