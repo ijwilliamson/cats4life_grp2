@@ -4,6 +4,7 @@ import "./Search.css";
 
 const Search = () => {
   const [cats, setCats] = useState([]);
+  const [catDetails, setCatDetails] = useState([]);
 
   useEffect(() => {
     async function getCats() {
@@ -12,8 +13,6 @@ const Search = () => {
       );
       const data = await response.json();
       setCats(data);
-
-      console.log(data[0].url);
     }
     getCats();
   }, []);
