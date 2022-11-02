@@ -3,49 +3,55 @@ import Search from "./components/Search";
 import Basket from "./components/Basket/Basket";
 import { useState } from "react";
 import Footer from "./components/Footer";
-
+import CatsIcon from "./cat.png";
+import CartIcon from "./cart.png";
+import SearchIcon from "./searchlogo.png";
 
 function App() {
-
   // State to store the cats in the basket
 
   const [basketItems, setBasketItems] = useState([]);
   const [basketVisible, setBasketVisible] = useState(false);
 
-  const toggleBasket=()=> {
+  const toggleBasket = () => {
     //Toggle the basket
-    setBasketVisible(!basketVisible)
-  }
+    setBasketVisible(!basketVisible);
+  };
 
-
-  const addToBasket = (cat) =>{
+  const addToBasket = (cat) => {
     //function which is called by the search component to add the
     // cat to the basket.
     // The cat is passed as an object
 
     let tempBasket = [...basketItems];
-    tempBasket.push(cat)
+    tempBasket.push(cat);
 
-    setBasketItems(tempBasket)
-
-  }
-
+    setBasketItems(tempBasket);
+  };
 
   return (
     <>
-      <Basket visible={basketVisible} toggle={toggleBasket} basketState={basketItems}/>
-      <div>
-        <div className="nav1">
-          <p>All Products</p>
-          <input type="text"></input>
-          <ul>
-            <a href="#">Account</a>
-            <a onClick={toggleBasket}>Cart</a>
-          </ul>
+      <div className="nav1">
+        <img className="cat" src={CatsIcon} alt="cat"></img>
+        <span>Cats4Lyf</span>
+        <input type="text"></input>
+        <img className="searchlogo" src={SearchIcon} alt="sl"></img>
+        <div className="BTN">
+          <img src={CartIcon} alt="cart"></img>
+          <button className="bas" onClick={toggleBasket}>
+            Basket
+          </button>
         </div>
-        <Search callback={addToBasket}/>
-        <Footer />
       </div>
+      <Basket
+        visible={basketVisible}
+        toggle={toggleBasket}
+        basketState={basketItems}
+      />
+
+      <Search callback={addToBasket} />
+
+      <Footer />
     </>
   );
 }
