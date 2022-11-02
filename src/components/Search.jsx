@@ -13,21 +13,26 @@ const Search = () => {
       );
       const data = await response.json();
       setCats(data);
+      let tempCatDetails = [];
+      for (let i = 0; i < data.length; i++) {
+        tempCatDetails.push({
+          name: faker.name.firstName(),
+          breed: faker.animal.cat(),
+          price: faker.commerce.price(),
+        });
+      }
+      console.log(tempCatDetails);
+      setCatDetails(tempCatDetails);
     }
+
+    
+
     getCats();
   }, []);
 
-  let tempCatDetails = [];
+  
 
-  for (let i = 0; i < cats.length; i++) {
-    tempCatDetails.push({
-      name: faker.name.firstName(),
-      breed: faker.animal.cat(),
-      price: faker.commerce.price(),
-    });
-  }
-  console.log(cats);
-  setCatDetails(tempCatDetails);
+  
 
   return (
     <div className="main-container">
