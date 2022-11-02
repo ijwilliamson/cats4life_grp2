@@ -12,10 +12,10 @@
                 <>
                     <div>
                         <div>
-                            <image></image>
+                            {/* <image></image> */}
                         </div>
                         <div>
-                            <price></price>
+                            {/* <price></price> */}
                         </div>
                     </div>
                     <div>
@@ -33,7 +33,7 @@
     return (
         
         <div className="basket">
-            {buildBasketJSX}
+            {/* {buildBasketJSX} */}
         </div>
     
     )
