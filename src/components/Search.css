@@ -3,22 +3,20 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 35px;
 
   max-width: 80%;
-  margin: 0 auto;
-}
-
-.cat-card-container {
-  display: flex;
+  margin: 75px auto;
 }
 
 .cat-card {
-  background-color: rgb(238, 238, 238);
+  background-color: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  width: 250px;
+  align-items: center;
+  width: 300px;
 
   overflow: hidden;
 }
@@ -27,19 +25,60 @@
   object-fit: cover;
 
   height: 200px;
-  width: 250px;
+  width: 300px;
 }
 
-.cat-card h4 {
-  margin: 5px 15px;
+.cat-description-name {
+  background-color: #1f0e64;
+  color: #f8f9fc;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+
+  width: 100%;
+  padding: 15px 0px 15px 0px;
 }
 
-.cat-card h3 {
-  margin: 10px 15px 5px 15px;
+.cat-description-breed {
+  background-color: #f6f4fc;
+  border-radius: 5px;
+
+  color: #1f0e64;
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-top: 10px;
+  padding: 3px 7px;
 }
 
-.cat-card p {
-  font-size: 12px;
-  margin: 5px 15px 10px 15px;
+.cat-description-fee {
+  color: #4c24e1;
+  font-weight: 500;
+
+  margin: 7px 0px;
+}
+.cat-description-text {
+  color: rgb(26, 26, 26);
+  font-size: 14px;
   text-align: justify;
+
+  margin: 10px 20px;
+}
+
+.cat-description-btn {
+  border: none;
+  background-color: #1f0e64;
+  cursor: pointer;
+
+  color: #f8f9fc;
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-top: 10px;
+  height: 45px;
+  width: 100%;
+}
+
+.cat-description-btn:hover {
+  background-color: #3911ca;
 }
