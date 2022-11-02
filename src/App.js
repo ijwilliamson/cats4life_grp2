@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <div className="nav1">
-        {/* <Search /> */}
+       
         <p>All Products</p>
         <input type="text"></input>
         <ul>
@@ -13,7 +13,9 @@ function App() {
           <a href="#">Cart</a>
         </ul>
       </div>
+      <Search />
     </div>
+     
   );
 }
 
