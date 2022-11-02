@@ -14,6 +14,8 @@ function App() {
   };
 
   return (
+    <>
+    <Basket basketState={basketItems}/>
     <div>
       <div className="nav1">
         <p>All Products</p>
@@ -25,6 +27,7 @@ function App() {
       </div>
       <Search />
     </div>
+    </>
   );
 }
 
