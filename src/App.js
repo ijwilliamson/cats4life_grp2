@@ -1,8 +1,11 @@
 import "./App.css";
 import Search from "./components/Search";
+import Basket from "./components/Basket/basket";
+
 
 function App() {
   return (
+
     <div>
       <div className="nav1">
        
@@ -16,6 +19,7 @@ function App() {
       <Search />
     </div>
      
+
   );
 }
 
