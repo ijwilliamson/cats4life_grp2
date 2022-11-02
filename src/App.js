@@ -1,13 +1,13 @@
 import "./App.css";
 import Search from "./components/Search";
-import Basket from "./components/Basket/basket";
+import Basket from "./components/Basket/Basket";
 import { useState } from "react";
 
 
 function App() {
 
   // State to store the cats in the basket
-  const [basketItems, setBasketItems] = useState();
+  const [basketItems, setBasketItems] = useState([]);
   
 
   const addToBasket = (cat) =>{
@@ -24,19 +24,21 @@ function App() {
 
 
   return (
-
-    <div>
-      <div className="nav1">
-       
-        <p>All Products</p>
-        <input type="text"></input>
-        <ul>
-          <a href="#">Account</a>
-          <a href="#">Cart</a>
-        </ul>
+    <>
+      <Basket data={basketItems}/>
+      <div>
+        <div className="nav1">
+        
+          <p>All Products</p>
+          <input type="text"></input>
+          <ul>
+            <a href="#">Account</a>
+            <a href="#">Cart</a>
+          </ul>
+        </div>
+        <Search callback={addToBasket} />
       </div>
-      <Search callback={addToBasket} />
-    </div>
+    </>
      
 
   );
