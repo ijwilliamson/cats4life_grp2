@@ -5,14 +5,21 @@ import Basket from "./components/Basket/basket";
 
 function App() {
   return (
-    <>
-      <div>
-        <Search />
+
+    <div>
+      <div className="nav1">
+       
+        <p>All Products</p>
+        <input type="text"></input>
+        <ul>
+          <a href="#">Account</a>
+          <a href="#">Cart</a>
+        </ul>
       </div>
-      <div>
-        <Basket />
-      </div>
-    </>
+      <Search />
+    </div>
+     
+
   );
 }
 

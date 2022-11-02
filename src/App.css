@@ -2,3 +2,38 @@
   margin: 0px;
   padding: 0px;
 }
+.nav1 {
+  /* border: 10px solid black; */
+  height: 200px;
+  width: auto;
+  background-color:grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  
+  width:500px;
+  height: 30px;
+  border-radius: 5px;
+  
+ 
+}
+
+p {
+  background-color: black;
+  color: aliceblue;
+  height: 35px;
+  width: 130px;
+  border-radius: 5px;
+  margin-top: 10px;
+  
+}
+
+ul {
+  display: flex;
+  margin-left: 5px;
+  text-decoration: none;
+}
