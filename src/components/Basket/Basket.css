@@ -11,10 +11,40 @@
 .basket {
     width:60%;
     height:60%;
-    background-color: white;
-    border: 2px solid purple;
+    background-color:rgb(238, 238, 238);
+    border: 2px solid rgb(86, 8, 122);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    
+
+}
+
+.basket .basketItems {
+    flex-grow: 1;
+}
+
+.basket .footer {
+    background-color: rgb(86, 8, 122);
+   display:flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.basket button {
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    padding:10px;
+    margin: 10px;
+}
+
+.basket .primary {
+    background-color: rgb(125, 185, 13);
+}
+
+.basket button:hover {
+    box-shadow: inset 0 0 10px #f8a100;
+}
+
+.hidden{
+    display:none;
 }

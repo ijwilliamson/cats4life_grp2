@@ -1,7 +1,10 @@
 import "./Basket.css";
 
 const Basket = (props) => {
-  //props basketState - array
+  //props 
+  //basketState - array
+  //visible - bool
+  //toggle - fn
 
   const buildBasketJSX = () => {
    
@@ -29,13 +32,18 @@ const Basket = (props) => {
     return basketJSX;
   };
 
+  const overlayClass = () =>{
+    return (props.visible) ? "overlay" : "overlay hidden" 
+  }
+
   return (
-    <div className="overlay">
+    <div className={overlayClass()}>
       <div className="basket">
         {buildBasketJSX()}
         <div className="footer">
-        <button></button>
-        <button></button>
+        <button onClick={props.toggle}>Back to store</button>
+        <button className="primary">Checkout now</button>
+        
       </div>
       </div>
       
