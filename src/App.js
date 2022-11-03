@@ -31,6 +31,13 @@ function App() {
 
   return (
     <>
+      
+      <Basket
+        visible={basketVisible}
+        toggle={toggleBasket}
+        basketState={basketItems}
+      />
+      <div>
       <div className="nav1">
         <img className="cat" src={CatsIcon} alt="cat"></img>
         <span>Cats4Lyf</span>
@@ -44,15 +51,12 @@ function App() {
           alt="cart"
         ></img>
       </div>
-      <Basket
-        visible={basketVisible}
-        toggle={toggleBasket}
-        basketState={basketItems}
-      />
+      
 
       <Search callback={addToBasket} />
 
-      <Footer />
+        <Footer />
+        </div>
     </>
   );
 }
