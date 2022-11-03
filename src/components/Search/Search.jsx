@@ -9,11 +9,21 @@ const Search = (props) => {
   const [modal, setModal] = useState(false);
   const [about, setAbout] = useState({});
   const [reload, setReload] = useState(true);
+  const [breed, setBreed] = useState("");
+
+  console.log(props.breed);
+  if (breed !== props.breed) {
+    setBreed(props.breed);
+    console.log("setting breed");
+  }
 
   useEffect(() => {
+    console.log(breed);
     async function getCats() {
       const response = await fetch(
-        "https://api.thecatapi.com/v1/images/search?limit=20&mime_types=jpg,png&api_key=live_0gKYZqSJEFQWb3Vd2Z2m3njZFRFpXYA0fomm2xLZJ0ePtYwbGxMi7KLS0oizD3A8"
+        `https://api.thecatapi.com/v1/images/search?breed_ids=${
+          breed === "" ? "" : breed.id
+        }&limit=20&mime_types=jpg,png&api_key=live_0gKYZqSJEFQWb3Vd2Z2m3njZFRFpXYA0fomm2xLZJ0ePtYwbGxMi7KLS0oizD3A8`
       );
       const data = await response.json();
       setCats(data);
@@ -21,7 +31,7 @@ const Search = (props) => {
       for (let i = 0; i < data.length; i++) {
         tempCatDetails.push({
           name: faker.name.firstName(),
-          breed: faker.animal.cat(),
+          breed: breed === "" ? faker.animal.cat() : breed.name,
           price: faker.commerce.price(),
         });
       }
@@ -30,6 +40,12 @@ const Search = (props) => {
 
     getCats();
   }, [reload]);
+
+  useEffect(() => {
+    // setBreed(props.breed);
+    console.log("breed change effect");
+    refresh();
+  }, [breed]);
 
   const toggleModal = (index) => {
     setModal(!modal);

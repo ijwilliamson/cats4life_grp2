@@ -13,15 +13,18 @@ function App() {
 
   const [basketItems, setBasketItems] = useState([]);
   const [basketVisible, setBasketVisible] = useState(false);
-  const [breed, setBreed] = useState("")
+  const [breed, setBreed] = useState("");
 
   const handleOnChange = (event) => {
     // event handler for the breed selection on the nav dropdown
-    setBreed(event.currentTarget.value);
+    const newBreed = {
+      id: event.currentTarget.value,
+      name: event.currentTarget[event.currentTarget.selectedIndex].text,
+    };
+    setBreed(newBreed);
 
-    console.log(event.currentTarget.value);
- 
-  }
+    console.log(event.currentTarget[event.currentTarget.selectedIndex].text);
+  };
 
   const toggleBasket = () => {
     //Toggle the basket
@@ -57,13 +60,9 @@ function App() {
         basketState={basketItems}
       />
       <div>
-
-        <Header
-          toggle={toggleBasket}
-          handleOnChange={handleOnChange}
-        />
-         <Hero />
-      <Search callback={addToBasket} breed={breed} />
+        <Header toggle={toggleBasket} handleOnChange={handleOnChange} />
+        <Hero />
+        <Search callback={addToBasket} breed={breed} />
 
         <Footer />
       </div>
