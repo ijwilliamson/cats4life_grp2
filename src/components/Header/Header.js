@@ -19,6 +19,10 @@ const Header = (props) => {
         src={CartIcon}
         alt="cart"
       ></img>
+      
+      {(props.basketItems.length>0)&& (<div className="basketCount" onClick={props.toggle}>{props.basketItems.length}</div>)}
+      {(props.basketItems.length===0)&& (<div className="basketCountSpace"></div>)}
+    
     </div>
   );
 };
