@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { faker } from "@faker-js/faker";
 import "./Search.css";
 import About from "../About/About";
@@ -8,6 +8,7 @@ const Search = (props) => {
   const [catDetails, setCatDetails] = useState([]);
   const [modal, setModal] = useState(false);
   const [about, setAbout] = useState({});
+  const [reload, setReload] = useState(true);
 
   useEffect(() => {
     async function getCats() {
@@ -28,7 +29,7 @@ const Search = (props) => {
     }
 
     getCats();
-  }, []);
+  }, [reload]);
 
   const toggleModal = (index) => {
     setModal(!modal);
@@ -49,8 +50,19 @@ const Search = (props) => {
     props.callback(cats[id], catDetails[id]);
   };
 
+  ////////////////
+
+  const ref = useRef(null);
+
+  const refresh = () => {
+    setReload(!reload);
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  ///////////////
+
   return (
-    <div className="main-container">
+    <div className="main-container" ref={ref}>
       {cats.map((cat, i) => {
         return (
           <div className="cat-card-container" key={i}>
@@ -113,6 +125,10 @@ const Search = (props) => {
           callback={forwardCallback}
         />
       )}
+
+      <button className="refresh-btn" onClick={refresh}>
+        More cats
+      </button>
     </div>
   );
 };
