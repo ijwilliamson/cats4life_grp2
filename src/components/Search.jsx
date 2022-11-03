@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { faker } from "@faker-js/faker";
 import "./Search.css";
 
-const Search = () => {
+const Search = (props) => {
   const [cats, setCats] = useState([]);
   const [catDetails, setCatDetails] = useState([]);
 
@@ -63,7 +63,12 @@ const Search = () => {
               </div>
               <hr className="line" />
               <div className="cat-description-footer">
-                <button className="cat-description-btn">Adopt me</button>
+                <button
+                  className="cat-description-btn"
+                  onClick={() => props.callback(cat, catDetails[i])}
+                >
+                  Adopt me
+                </button>
                 <div className="cat-fee">
                   <p className="cat-description-fee">Adoption fee</p>
                   <p className="cat-description-fee">£{catDetails[i].price}</p>
