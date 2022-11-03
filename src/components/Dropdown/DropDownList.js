@@ -14,10 +14,6 @@ const DropDownList = (props) => {
     };
     fetchData();
   }, []);
-  // const handleOnChange = (event) => {
-  //   console.log(event.currentTarget.value);
- 
-  // }
 
   return (
     <>
