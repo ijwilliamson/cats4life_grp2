@@ -21,7 +21,27 @@
 }
 
 .basket .basketItems {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px;
+}
+
+.basket .basketItems .photo{
+    width:120px;
+}
+
+.basket .basketItems .name{
+    width:200px;
+}
+.basket .basketItems .price{
+    width:150px;
+    text-align: right;
+}
+
+.basket .allItems{
     flex-grow: 1;
+    overflow-y: scroll;
 }
 
 .basket .footer {

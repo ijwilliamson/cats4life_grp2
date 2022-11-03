@@ -7,7 +7,7 @@ const Basket = (props) => {
   //toggle - fn
 
   const buildBasketJSX = () => {
-   
+    
     if(typeof props.basketState === "undefined"){
       // if the basketState does not exist then return no items
       console.log("no items")
@@ -15,19 +15,26 @@ const Basket = (props) => {
     }
 
     console.log(props.basketState)
-    let total = 0;
-    const basketJSX = props.basketState.map((item) => {
-      total += item.price;
+    
+    let basketJSX = props.basketState.map((item) => {
+      
+
       return (
         <>
-          <div  className="basketItems">
-            <div>{/* <image></image> */}</div>
-            <div>{/* <price></price> */}</div>
+          <div className="basketItems">
+            <div className="photo"><img src={item.url} width="100px" alt={item.name}/></div>
+            <div className="name">{item.name}</div>
+            <div className="price">{item.price}</div>
           </div>
-          <div>total: {total}</div>
+          
         </>
       );
+
+
     });
+
+
+    
 
     return basketJSX;
   };
@@ -36,15 +43,39 @@ const Basket = (props) => {
     return (props.visible) ? "overlay" : "overlay hidden" 
   }
 
+  const calcTotal = () => {
+    let total = 0;
+    for (let i=0;i<props.basketState.length; i++){
+        total = ((total*10) + (Number(props.basketState[i].price)*10))/10
+        console.log(total)
+    }
+
+    return total.toFixed(2);
+
+  }
+
   return (
     <div className={overlayClass()}>
       <div className="basket">
-        {buildBasketJSX()}
-        <div className="footer">
-        <button onClick={props.toggle}>Back to store</button>
-        <button className="primary">Checkout now</button>
+      <div className="basketItems">
+            <div className="photo">Photograph</div>
+            <div className="name">Name</div>
+            <div className="price">Price</div>
+        </div>
+        <div className="allItems">
         
-      </div>
+          {buildBasketJSX()}
+        </div>
+        <div className="basketItems">
+            <div className="photo"></div>
+            <div className="name"></div>
+            <div className="price">Total: £{calcTotal()}</div>
+        </div>
+        <div className="footer">
+          <button onClick={props.toggle}>Back to store</button>
+          <button className="primary">Checkout now</button>
+        </div>
+       
       </div>
       
     </div>
