@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="footer-bg" onClick={scrollToTop}>
       <div className="scroll-icon" onClick={scrollToTop}>
-        <i class="fa-solid fa-circle-chevron-up"></i>
+        <i className="fa-solid fa-circle-chevron-up"></i>
       </div>
       <div>
         <p>Codenation Bootcamp - React ECommerce Project</p>
