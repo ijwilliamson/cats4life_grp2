@@ -32,9 +32,9 @@ const Search = (props) => {
     <div className="main-container">
       {cats.map((cat, i) => {
         return (
-          <div className="cat-card-container">
+          <div className="cat-card-container" key={i}>
             <div className="cat-card">
-              <img className="cat-images" key={i} src={cat.url} alt="cat" />
+              <img className="cat-images"  src={cat.url} alt="cat" />
               <div className="cat-description-header">
                 <p className="cat-description-name">{catDetails[i].name}</p>
                 <p className="cat-description-breed">{catDetails[i].breed}</p>
