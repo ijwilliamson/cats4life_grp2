@@ -18,45 +18,53 @@ function App() {
     setBasketVisible(!basketVisible);
   };
 
-  const addToBasket = (cat) => {
+  const addToBasket = (cat, catDetails) => {
     //function which is called by the search component to add the
     // cat to the basket.
     // The cat is passed as an object
 
     let tempBasket = [...basketItems];
-    tempBasket.push(cat);
+
+    const newCat = {
+      url: cat.url,
+      id: cat.id,
+      name: catDetails.name,
+      breed: catDetails.breed,
+      price: catDetails.price,
+    };
+
+    tempBasket.push(newCat);
 
     setBasketItems(tempBasket);
+    console.log(basketItems);
   };
 
   return (
     <>
-      
       <Basket
         visible={basketVisible}
         toggle={toggleBasket}
         basketState={basketItems}
       />
       <div>
-      <div className="nav1">
-        <img className="cat" src={CatsIcon} alt="cat"></img>
-        <span>Cats4Lyf</span>
-        <input type="text"></input>
-        <img className="searchlogo" src={SearchIcon} alt="sl"></img>
+        <div className="nav1">
+          <img className="cat" src={CatsIcon} alt="cat"></img>
+          <span>Cats4Lyf</span>
+          <input type="text"></input>
+          <img className="searchlogo" src={SearchIcon} alt="sl"></img>
 
-        <img
-          className="cartlogo"
-          onClick={toggleBasket}
-          src={CartIcon}
-          alt="cart"
-        ></img>
-      </div>
-      
+          <img
+            className="cartlogo"
+            onClick={toggleBasket}
+            src={CartIcon}
+            alt="cart"
+          ></img>
+        </div>
 
-      <Search callback={addToBasket} />
+        <Search callback={addToBasket} />
 
         <Footer />
-        </div>
+      </div>
     </>
   );
 }
