@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="4QLZkowvjsxWIg_K8Mz_" name="Page-1">
-        <mxGraphModel dx="1116" dy="524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1116" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -100,10 +100,34 @@
                 <mxCell id="TCIlKgK15rvMpgmdI_dN-7" value="FN - Callback&lt;br&gt;Add cat to basket state" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="570" y="150" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="" style="shape=flexArrow;endArrow=none;html=1;rounded=0;entryX=0.013;entryY=0.126;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="TCIlKgK15rvMpgmdI_dN-16" target="TCIlKgK15rvMpgmdI_dN-7">
+                <mxCell id="2" value="" style="shape=flexArrow;endArrow=none;html=1;rounded=0;entryX=0.013;entryY=0.126;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="TCIlKgK15rvMpgmdI_dN-16" target="TCIlKgK15rvMpgmdI_dN-7" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="620" y="270" as="sourcePoint"/>
                         <mxPoint x="642.0799999999999" y="46.539999999999964" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="Click more info&lt;br&gt;Pass (cat &amp;amp; cat detils)" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="660" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="display Model" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="700" width="180" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Load cat and cat details" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="700" width="90" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Close the model" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="730" y="810" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="TCIlKgK15rvMpgmdI_dN-3" target="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="370" y="720" as="sourcePoint"/>
+                        <mxPoint x="370" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="shape=flexArrow;endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="530" y="870" as="sourcePoint"/>
+                        <mxPoint x="580" y="820" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
