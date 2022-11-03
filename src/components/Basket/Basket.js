@@ -22,16 +22,20 @@ const Basket = (props) => {
           <div className="basketItems" key={index}>
             <div className="photo"><img src={item.url} width="100px" alt={item.name}/></div>
             <div className="name">{item.name}</div>
-            <div className="price">{item.price}</div>
+            <div className="price">£{item.price}</div>
           </div>
           
-        
       );
 
     });
 
     return basketJSX;
   };
+
+  const clearBasket = () => {
+    // remove all items from the basket
+    props.setBasketState([])
+  }
 
   const overlayClass = () =>{
     // Get the class to use for the overlay so that it hides and shows
@@ -69,8 +73,11 @@ const Basket = (props) => {
         </div>
 
         <div className="footer">
-          <button className="cat-description-btn" onClick={props.toggle}>Back to store</button>
-          <button className="cat-description-btn">Checkout now</button>
+          <button className="cat-description-btn" onClick={clearBasket}>Clear Basket</button>
+          <div> 
+            <button className="cat-description-btn" onClick={props.toggle}>Back to store</button>
+            <button className="cat-description-btn">Checkout now</button>
+          </div> 
         </div>
 
       </div>
