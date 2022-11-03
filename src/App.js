@@ -13,6 +13,10 @@ function App() {
 
   const [basketItems, setBasketItems] = useState([]);
   const [basketVisible, setBasketVisible] = useState(false);
+  const handleOnChange = (event) => {
+    console.log(event.currentTarget.value);
+ 
+  }
 
   const toggleBasket = () => {
     //Toggle the basket
@@ -48,9 +52,14 @@ function App() {
         basketState={basketItems}
       />
       <div>
-        <Header toggle={toggleBasket} />
-        <Hero />
-        <Search callback={addToBasket} />
+
+        <Header
+          toggle={toggleBasket}
+          handleOnChange={handleOnChange}
+        />
+         <Hero />
+      <Search callback={addToBasket} />
+
         <Footer />
       </div>
     </>
