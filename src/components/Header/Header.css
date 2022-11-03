@@ -7,13 +7,13 @@
   height: 70px;
   padding: 3px;
 }
-.searchlogo {
+/* .searchlogo {
   cursor: pointer;
   width: 30px;
   height: 30px;
   margin-left: -40px;
   opacity: 0.8;
-}
+} */
 .nav1 {
   height: 110px;
   width: auto;
@@ -27,24 +27,30 @@
 }
 
 input {
-  padding-left: 10px;
-  margin-left: 20px;
+  padding-left: 5px;
+  margin-left: 30px;
   font-size: 16px;
-  width:450px;
+  width: 100px;
   height: 42px;
   border-radius: 5px;
+  background: #fff;
+  text-align:center;
+}
+input:hover{
+  background: #1f0e64;
+  color: #fff;
 }
 span {
   font-weight:bold;
   font-size: 20px;
   background-color: #1f0e64;
   color:  #f8f9fc;
-  height: 35px;
+  height: 38px;
   width: 160px;
   text-align: center;
   border-radius: 5px;
   margin-top: 0px;
-  padding-top: 11px;
+  padding-top: 5px;
   margin-right: -20px;
   text-align: center;
 }
