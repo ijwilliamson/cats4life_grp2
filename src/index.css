@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background: linear-gradient(45deg, #eeeeee, #faf8f9, #ffffff);
+  color: #252525;
   font-family: "Poppins", sans-serif;
 }
 
