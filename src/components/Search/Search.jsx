@@ -142,9 +142,11 @@ const Search = (props) => {
         />
       )}
 
-      <button className="refresh-btn" onClick={refresh}>
-        More cats
-      </button>
+      {cats.length === 20 && (
+        <button className="refresh-btn" onClick={refresh}>
+          More cats
+        </button>
+      )}
     </div>
   );
 };
