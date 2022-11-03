@@ -1,8 +1,8 @@
 import "./App.css";
-import Search from "./components/Search";
+import Search from "./components/Search/Search";
 import Basket from "./components/Basket/Basket";
 import { useState } from "react";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import CatsIcon from "./cat.png";
 import CartIcon from "./cart.png";
 import SearchIcon from "./searchlogo.png";
