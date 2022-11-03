@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { faker } from "@faker-js/faker";
 import "./Search.css";
+import About from "../About/About";
 
 const Search = (props) => {
   const [cats, setCats] = useState([]);
   const [catDetails, setCatDetails] = useState([]);
+  const [modal, setModal] = useState(false);
+  const [about, setAbout] = useState({});
 
   useEffect(() => {
     async function getCats() {
@@ -21,18 +24,31 @@ const Search = (props) => {
           price: faker.commerce.price(),
         });
       }
-      console.log(tempCatDetails);
       setCatDetails(tempCatDetails);
     }
 
     getCats();
   }, []);
 
+  const toggleModal = (index) => {
+    setModal(!modal);
+
+    !modal
+      ? setAbout({
+          name: catDetails[index].name,
+          breed: catDetails[index].breed,
+          image: cats[index].url,
+          price: catDetails[index].price,
+        })
+      : setAbout({});
+    // setModal(!modal);
+  };
+
   return (
     <div className="main-container">
       {cats.map((cat, i) => {
         return (
-          <div className="cat-card-container">
+          <div className="cat-card-container" key={i}>
             <div className="cat-card">
               <img className="cat-images" key={i} src={cat.url} alt="cat" />
               <div className="cat-description-header">
@@ -44,6 +60,9 @@ const Search = (props) => {
                 looking for my forever home and I promise to never wake you up
                 at 4am asking for food.
               </p>
+              <p className="cat-moreinfo" onClick={() => toggleModal(i)}>
+                More info...
+              </p>
               <hr className="line" />
               <div className="cat-description-mid">
                 <p className="cat-description-mid-title">
@@ -51,13 +70,14 @@ const Search = (props) => {
                 </p>
                 <div className="cat-reasons">
                   <p>
-                    <i class="fa-solid fa-cat"></i> New buddie
+                    <i className="fa-solid fa-cat"></i> New buddie
                   </p>
                   <p>
-                    <i class="fa-sharp fa-solid fa-bowl-food"></i> Easy to care
+                    <i className="fa-sharp fa-solid fa-bowl-food"></i> Easy to
+                    care
                   </p>
                   <p>
-                    <i class="fa-solid fa-heart heart"></i> Lovely
+                    <i className="fa-solid fa-heart heart"></i> Lovely
                   </p>
                 </div>
               </div>
@@ -74,13 +94,14 @@ const Search = (props) => {
                   <p className="cat-description-fee">£{catDetails[i].price}</p>
                 </div>
                 <button className="cat-description-like">
-                  <i class="fa-solid fa-heart"></i>
+                  <i className="fa-solid fa-heart"></i>
                 </button>
               </div>
             </div>
           </div>
         );
       })}
+      {modal && <About toggleModal={toggleModal} about={about} />}
     </div>
   );
 };
