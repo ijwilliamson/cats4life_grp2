@@ -1,9 +1,13 @@
 import "./App.css";
-import Search from "./components/Search";
+import Search from "./components/Search/Search";
 import Basket from "./components/Basket/Basket";
 import { useState } from "react";
-import Footer from "./components/Footer";
+
+
 import Header from "./components/Header/Header";
+
+import Footer from "./components/Footer/Footer";
+
 function App() {
   // State to store the cats in the basket
 
@@ -15,34 +19,46 @@ function App() {
     setBasketVisible(!basketVisible);
   };
 
-  const addToBasket = (cat) => {
+  const addToBasket = (cat, catDetails) => {
     //function which is called by the search component to add the
     // cat to the basket.
     // The cat is passed as an object
 
     let tempBasket = [...basketItems];
-    tempBasket.push(cat);
+
+    const newCat = {
+      url: cat.url,
+      id: cat.id,
+      name: catDetails.name,
+      breed: catDetails.breed,
+      price: catDetails.price,
+    };
+
+    tempBasket.push(newCat);
 
     setBasketItems(tempBasket);
+    console.log(basketItems);
   };
 
   return (
     <>
-      
       <Basket
         visible={basketVisible}
         toggle={toggleBasket}
         basketState={basketItems}
       />
       <div>
+
       
         <Header
           toggle={toggleBasket}
         />
       <Search callback={addToBasket} />
 
+       
+
         <Footer />
-        </div>
+      </div>
     </>
   );
 }

@@ -21,14 +21,17 @@
   position: fixed;
 }
 
-.scroll-icon i:hover {
-  color: #efeaff;
-}
-
 .scroll-icon i {
   background-color: #4c24e1;
   border: 3px solid #4c24e1;
   border-radius: 50%;
   color: #f8f9fc;
   font-size: 45px;
+  transition: 300ms ease-in;
+}
+
+.scroll-icon i:hover {
+  background-color: #f8f9fc;
+  border: 3px solid #f8f9fc;
+  color: #4c24e1;
 }
