@@ -1,6 +1,6 @@
 import "./About.css";
 
-const About = ({ toggleModal, about }) => {
+const About = ({ toggleModal, about, callback }) => {
   return (
     <div className="modal-bg" onClick={toggleModal}>
       <div className="modal-container">
@@ -26,7 +26,12 @@ const About = ({ toggleModal, about }) => {
             </p>
           </div>
           <div className="cat-description-footer">
-            <button className="cat-description-btn">Adopt me</button>
+            <button
+              className="cat-description-btn"
+              onClick={() => callback(about.id)}
+            >
+              Adopt me
+            </button>
             <div className="cat-fee">
               <p className="cat-description-fee">Adoption fee</p>
               <p className="cat-description-fee">£{about.price}</p>
