@@ -1,0 +1,26 @@
+.dropDown {
+  position: relative;
+  /* margin-left: -200px; */
+  margin-top: 50px;
+}
+
+.menu {
+  position: absolute;
+  cursor: pointer;
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+
+  border: 1px solid grey;
+  width: 150px;
+}
+
+.menu > li {
+  margin: 0;
+
+  background-color: white;
+}
+
+.menu > li:hover {
+  background-color: lightgray;
+}
