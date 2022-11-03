@@ -39,9 +39,14 @@ const Search = (props) => {
           breed: catDetails[index].breed,
           image: cats[index].url,
           price: catDetails[index].price,
+          id: index,
         })
       : setAbout({});
     // setModal(!modal);
+  };
+
+  const forwardCallback = (id) => {
+    props.callback(cats[id], catDetails[id]);
   };
 
   return (
@@ -50,7 +55,7 @@ const Search = (props) => {
         return (
           <div className="cat-card-container" key={i}>
             <div className="cat-card">
-              <img className="cat-images"  src={cat.url} alt="cat" />
+              <img className="cat-images" src={cat.url} alt="cat" />
               <div className="cat-description-header">
                 <p className="cat-description-name">{catDetails[i].name}</p>
                 <p className="cat-description-breed">{catDetails[i].breed}</p>
@@ -101,7 +106,13 @@ const Search = (props) => {
           </div>
         );
       })}
-      {modal && <About toggleModal={toggleModal} about={about} />}
+      {modal && (
+        <About
+          toggleModal={toggleModal}
+          about={about}
+          callback={forwardCallback}
+        />
+      )}
     </div>
   );
 };
