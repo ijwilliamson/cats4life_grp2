@@ -13,7 +13,12 @@ function App() {
 
   const [basketItems, setBasketItems] = useState([]);
   const [basketVisible, setBasketVisible] = useState(false);
+  const [breed, setBreed] = useState("")
+
   const handleOnChange = (event) => {
+    // event handler for the breed selection on the nav dropdown
+    setBreed(event.currentTarget.value);
+
     console.log(event.currentTarget.value);
  
   }
@@ -58,7 +63,7 @@ function App() {
           handleOnChange={handleOnChange}
         />
          <Hero />
-      <Search callback={addToBasket} />
+      <Search callback={addToBasket} breed={breed} />
 
         <Footer />
       </div>
