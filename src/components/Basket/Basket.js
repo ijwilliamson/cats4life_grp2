@@ -33,9 +33,6 @@ const Basket = (props) => {
 
     });
 
-
-    
-
     return basketJSX;
   };
 
@@ -49,15 +46,13 @@ const Basket = (props) => {
         total = ((total*10) + (Number(props.basketState[i].price)*10))/10
         console.log(total)
     }
-
     return total.toFixed(2);
-
   }
 
   return (
     <div className={overlayClass()}>
       <div className="basket">
-      <div className="basketItems">
+      <div className="basketItems basketHeader">
             <div className="photo">Photograph</div>
             <div className="name">Name</div>
             <div className="price">Price</div>
@@ -66,19 +61,18 @@ const Basket = (props) => {
         
           {buildBasketJSX()}
         </div>
-        <div className="basketItems">
+        <div className="basketItems total">
             <div className="photo"></div>
             <div className="name"></div>
             <div className="price">Total: £{calcTotal()}</div>
         </div>
         <div className="footer">
-          <button onClick={props.toggle}>Back to store</button>
-          <button className="primary">Checkout now</button>
+          <button className="cat-description-btn" onClick={props.toggle}>Back to store</button>
+          <button className="cat-description-btn">Checkout now</button>
         </div>
-       
       </div>
-      
     </div>
+  
   
   )
 };
