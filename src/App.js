@@ -3,10 +3,10 @@ import Search from "./components/Search/Search";
 import Basket from "./components/Basket/Basket";
 import { useState } from "react";
 
-
 import Header from "./components/Header/Header";
 
 import Footer from "./components/Footer/Footer";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   // State to store the cats in the basket
@@ -53,14 +53,12 @@ function App() {
       />
       <div>
 
-      
         <Header
           toggle={toggleBasket}
           handleOnChange={handleOnChange}
         />
+         <Hero />
       <Search callback={addToBasket} />
-
-       
 
         <Footer />
       </div>
