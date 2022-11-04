@@ -143,9 +143,11 @@ const Search = (props) => {
       )}
 
       {cats.length === 20 && (
-        <button className="refresh-btn" onClick={refresh}>
-          More cats
-        </button>
+        <div className="cat-btn-home">
+          <button className="refresh-btn" onClick={refresh}>
+            More cats
+          </button>
+        </div>
       )}
     </div>
   );
