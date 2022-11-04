@@ -1,11 +1,17 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import Search from "./components/Search/Search";
+import { Routes, Route} from 'react-router-dom';
+
 import Basket from "./components/Basket/Basket";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero/Hero";
-import AboutPage from "./pages/AboutPage";
+
+
+
+import HomePage from './pages/homePage';
+import AboutPage from './pages/AboutPage';
+import CheckoutPage from './pages/checkoutPage'
+
 
 function App() {
   // Local Storage key
@@ -84,14 +90,18 @@ function App() {
         setBasketState={setBasketItems}
       />
       <div>
-        <Header
-          toggle={toggleBasket}
-          handleOnChange={handleOnChange}
-          basketItems={basketItems}
-        />
-        {/* <AboutPage /> */}
-        <Hero />
-        <Search callback={addToBasket} breed={breed} />
+
+               
+        <Header toggle={toggleBasket} handleOnChange={handleOnChange} basketItems={basketItems} />
+        
+        <Routes>
+          <Route path="/" element={<HomePage addToBasket={addToBasket} breed={breed} />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+        </Routes>
+        
+        
+
         <Footer />
       </div>
     </>
