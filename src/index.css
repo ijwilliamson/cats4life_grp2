@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: linear-gradient(45deg, #eeeeee, #faf8f9, #ffffff);
+  background: #fbfafa;
   color: #252525;
   font-family: "Poppins", sans-serif;
 }
