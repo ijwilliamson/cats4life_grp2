@@ -2,3 +2,11 @@
   margin: 0px;
   margin: 0px;
 }
+
+.invi {
+  visibility: hidden;
+}
+
+.not-invi {
+  visibility: visible;
+}
