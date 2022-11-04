@@ -1,97 +1,112 @@
-.cF{
-    min-height:calc(100vh - 205px);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:20px;
-    margin-bottom:20px;
+.cF {
+  min-height: calc(100vh - 205px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.cF h1{
-    background-color: #4c24e1;
-    padding-top:10px;
-    padding-bottom:10px;
-    color: rgb(238, 238, 238);
-    height: 25px;
-    width: 100%;
-    text-align: center;
-    line-height: 25px;
-    font-size: 18px;
-    border-radius: 10px 10px 0 0;
-    
+.cF h1 {
+  background-color: #4c24e1;
+  padding: 20px 0px;
+  color: rgb(238, 238, 238);
+
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+
+  font-size: 24px;
+  font-weight: 500;
+
+  margin-top: 20px;
+
+  border-radius: 15px 15px 0 0;
 }
 
-.cF hr{
-    margin-bottom:20px;
+.cF hr {
+  margin-bottom: 20px;
 }
 
-.cF form{
-    border:2px solid #4c24e1;
-    width: calc(100% - 4px);
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+.cF form {
+  border: 2px solid #4c24e1;
+  width: calc(100% - 4px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.cF form hor-group{
-    width:100%;
-    display:flex;
-    flex-direction: row;
-    justify-content: stretch;
-    margin-top:20px;
+.cF form hor-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  margin-top: 20px;
 }
 
-.cF hor-group section{
-    width:50%;
-   
+.cF hor-group section {
+  width: 50%;
 }
 
-.cF form ver-group{
-    display:flex;
-    flex-direction:column;
-    width: 50%;
-    margin-top:20px;
-    min-width: 300px;
-    flex-grow: 1;
+.cF form ver-group {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 20px;
+  min-width: 300px;
+  flex-grow: 1;
 }
 
-.cF ver-group section{
-
+.cF ver-group section {
 }
 
-.cF form  section{
-    margin:10px;
-    display:flex;
-    flex-direction: row; 
+.cF form section {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
-.cF label{
-    width:100px;
-    display: inline-block;
-    
+.cF label {
+  font-size: 16px;
+  margin-left: 15px;
+  width: 120px;
+  display: inline-block;
 }
 
-.cF input{
-    flex-grow: 1;
-    height:30px;
-    font-size:14px;
-    border-radius: 12px;
-    padding-left:10px;
+.cF input {
+  flex-grow: 1;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #3911ca;
+  border-radius: 12px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+#postcode {
+  margin-bottom: 20px;
 }
 
 .cF .footer {
-    background-color: rgb(206, 206, 206);
-   display:flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 100%;
-  
+  background-color: rgb(206, 206, 206);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  padding: 10px;
 }
 
-.cF button{
-    margin: 10px;
+.cF button {
+  margin: 10px;
 }
+
+/* @media only screen and (max-width: 1185px) {
+  .cF form hor-group {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+} */
