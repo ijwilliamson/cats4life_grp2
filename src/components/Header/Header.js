@@ -20,9 +20,9 @@ const Header = (props) => {
           >
             <i class="fa-solid fa-basket-shopping"></i>Basket
           </div>
-          <div className="basket-number">
+          <div className="basket-empty">
             {props.basketItems.length > 0 && (
-              <div className="basketCount" onClick={props.toggle}>
+              <div className="basket-number" onClick={props.toggle}>
                 {props.basketItems.length}
               </div>
             )}
