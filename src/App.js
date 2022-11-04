@@ -1,20 +1,22 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import Search from "./components/Search/Search";
+import { Routes, Route} from 'react-router-dom';
+
 import Basket from "./components/Basket/Basket";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero/Hero";
+
+
+
+import HomePage from './pages/homePage';
+import AboutPage from './pages/AboutPage';
+import CheckoutPage from './pages/checkoutPage'
 
 
 function App() {
-
   // Local Storage key
 
-  const _LocalStorageKey = 'cats4life.basket'
-
-
-
+  const _LocalStorageKey = "cats4life.basket";
 
   // State to store the cats in the basket
 
@@ -22,26 +24,25 @@ function App() {
   const [basketVisible, setBasketVisible] = useState(false);
   const [breed, setBreed] = useState("");
 
-
   // Local storage use Effect
 
   useEffect(() => {
-    const localStorageBasket = JSON.parse(localStorage.getItem(_LocalStorageKey))
+    const localStorageBasket = JSON.parse(
+      localStorage.getItem(_LocalStorageKey) ? localStorage.getItem(_LocalStorageKey) : JSON.stringify([]) 
+    );
 
-    if(basketItems){
-        if (localStorageBasket){
-          setBasketItems(localStorageBasket)
-        }
+    if (basketItems) {
+      if (localStorageBasket) {
+        setBasketItems(localStorageBasket);
+      }
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
-    if (basketItems.length>0){
-      localStorage.setItem(_LocalStorageKey, JSON.stringify(basketItems))
+    if (basketItems.length > 0) {
+      localStorage.setItem(_LocalStorageKey, JSON.stringify(basketItems));
     }
-  }, [basketItems])
-
-
+  }, [basketItems]);
 
   const handleOnChange = (event) => {
     // event handler for the breed selection on the nav dropdown
@@ -89,9 +90,17 @@ function App() {
         setBasketState={setBasketItems}
       />
       <div>
+
+               
         <Header toggle={toggleBasket} handleOnChange={handleOnChange} basketItems={basketItems} />
-        <Hero />
-        <Search callback={addToBasket} breed={breed} />
+        
+        <Routes>
+          <Route path="/" element={<HomePage addToBasket={addToBasket} breed={breed} />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+        </Routes>
+        
+        
 
         <Footer />
       </div>
@@ -100,3 +109,4 @@ function App() {
 }
 
 export default App;
+//hello

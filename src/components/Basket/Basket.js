@@ -1,10 +1,12 @@
 import "./Basket.css";
-
+import { useNavigate } from 'react-router-dom';
 const Basket = (props) => {
   //props 
   //basketState - array
   //visible - bool
   //toggle - fn
+
+  const nav = useNavigate();
 
   const buildBasketJSX = () => {
     
@@ -34,7 +36,10 @@ const Basket = (props) => {
 
   const clearBasket = () => {
     // remove all items from the basket
-    props.setBasketState([])
+    props.setBasketState([]);
+    // Clear local storage
+    const _LocalStorageKey = "cats4life.basket";
+    localStorage.setItem(_LocalStorageKey, JSON.stringify([]));
   }
 
   const overlayClass = () =>{
@@ -50,6 +55,13 @@ const Basket = (props) => {
        
     }
     return total.toFixed(2);
+  }
+
+  const handleCheckoutClick = () => {
+    
+    
+    nav("/checkout");
+    props.toggle();
   }
 
   return (
@@ -76,7 +88,7 @@ const Basket = (props) => {
           <button className="cat-description-btn" onClick={clearBasket}>Clear Basket</button>
           <div> 
             <button className="cat-description-btn" onClick={props.toggle}>Back to store</button>
-            <button className="cat-description-btn">Checkout now</button>
+            <button className="cat-description-btn" onClick={handleCheckoutClick}>Checkout now</button>
           </div> 
         </div>
 

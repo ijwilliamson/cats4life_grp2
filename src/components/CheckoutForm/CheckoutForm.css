@@ -1,0 +1,97 @@
+.cF{
+    min-height:calc(100vh - 205px);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.cF h1{
+    background-color: #4c24e1;
+    padding-top:10px;
+    padding-bottom:10px;
+    color: rgb(238, 238, 238);
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.cF hr{
+    margin-bottom:20px;
+}
+
+.cF form{
+    border:2px solid #4c24e1;
+    width: calc(100% - 4px);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.cF form hor-group{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin-top:20px;
+}
+
+.cF hor-group section{
+    width:50%;
+   
+}
+
+.cF form ver-group{
+    display:flex;
+    flex-direction:column;
+    width: 50%;
+    margin-top:20px;
+    min-width: 300px;
+    flex-grow: 1;
+}
+
+.cF ver-group section{
+
+}
+
+.cF form  section{
+    margin:10px;
+    display:flex;
+    flex-direction: row; 
+}
+
+.cF label{
+    width:100px;
+    display: inline-block;
+    
+}
+
+.cF input{
+    flex-grow: 1;
+    height:30px;
+    font-size:14px;
+    border-radius: 12px;
+    padding-left:10px;
+}
+
+.cF .footer {
+    background-color: rgb(206, 206, 206);
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+  
+}
+
+.cF button{
+    margin: 10px;
+}
