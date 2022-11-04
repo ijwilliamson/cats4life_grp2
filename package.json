@@ -1,7 +1,6 @@
 {
   "name": "cats4life-grp2",
   "version": "0.1.0",
-  "homepage": "https://ijwilliamson.github.io/cats4life_grp2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
