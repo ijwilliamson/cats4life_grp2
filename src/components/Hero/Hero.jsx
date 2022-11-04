@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-left">
           <p className="hero-small-text">
-            The perfect place for you find a thrue friend!
+            The perfect place for you find a true friend!
           </p>
           <div className="hero-title">Find today</div>
           <div className="hero-title">

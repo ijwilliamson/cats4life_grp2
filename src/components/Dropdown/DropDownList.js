@@ -17,7 +17,11 @@ const DropDownList = (props) => {
 
   return (
     <>
-      <select id="breeds" onChange={(event) => props.handleOnChange(event)}>
+      <select
+        className="dropdown"
+        id="breeds"
+        onChange={(event) => props.handleOnChange(event)}
+      >
         {catList.map((cat, index) => {
           return (
             <option key={index} value={cat.id}>

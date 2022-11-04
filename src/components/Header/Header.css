@@ -1,29 +1,110 @@
-* {
-  margin: 0px;
-  padding: 0px;
+.navbar-bg {
+  background-color: #4c24e1;
+  color: #f8f9fc;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0px;
+  z-index: 998;
+  height: 65px;
 }
-.cat {
-  width: 50px;
-  height: 50px;
-  padding: 3px;
+
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
 }
-.nav1 {
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  font-size: 40px;
+  margin-left: 10%;
+}
+
+.logo i {
+  color: #f8f9fc;
+  font-size: 45px;
+  margin-right: 25px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 20px;
+
+  width: auto;
+}
+
+.basket-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  cursor: pointer;
+  font-size: 20px;
+
+  width: auto;
+}
+
+.basket-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0px 10px;
+}
+
+.fa-basket-shopping {
+  margin-right: 10px;
+}
+
+.fa-magnifying-glass {
+  margin-left: 10px;
+}
+
+.basket-number {
+  background-color: #43d77c;
+  border-radius: 30px;
+  color: #f8f9fc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  height: 30px;
+  width: 30px;
+}
+
+/* Css */
+
+/* .nav1 {
   height: 60px;
   width: auto;
-  background-color:#4c24e1;
+  background-color: #4c24e1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 0px;
-}
+} 
 
 span {
-  font-weight:bold;
+  font-weight: bold;
   font-size: 20px;
   background-color: #1f0e64;
-  color:  #f8f9fc;
+  color: #f8f9fc;
   height: 34px;
   width: 160px;
   text-align: center;
@@ -41,23 +122,58 @@ span {
   margin-left: 50px;
 }
 
-.basketCount{
+.basketCount {
   background-color: white;
-  padding:3px;
+  padding: 3px;
   border-radius: 50%;
-  margin-left:3px;
-  width:16px;
-  height:16px;
-  display:flex;
+  margin-left: 3px;
+  width: 16px;
+  height: 16px;
+  display: flex;
   justify-content: center;
   align-items: center;
   border: 0.5px solid red;
-  color:red;
+  color: red;
   font-size: 12px;
   cursor: pointer;
 }
 
-.basketCountSpace{
-  width:27px;
-  height:27px;
+.basketCountSpace {
+  width: 27px;
+  height: 27px;
+} */
+
+/* Responsive */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1250px) {
+  .navbar-left {
+    margin-right: 8%;
+  }
+
+  .logo {
+    margin-left: 8%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .navbar-left {
+    margin-right: 5%;
+  }
+
+  .logo {
+    margin-left: 5%;
+  }
+
+  .search-container {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .dropdown {
+    display: none;
+  }
 }
