@@ -207,3 +207,9 @@
 .refresh-btn:hover {
   background-color: #29b65f;
 }
+
+.cat-btn-home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
