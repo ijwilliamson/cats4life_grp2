@@ -1,5 +1,5 @@
 .cF{
-    min-height:calc(100vh - 207px);
+    min-height:calc(100vh - 205px);
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -42,23 +42,31 @@
     display:flex;
     flex-direction: row;
     justify-content: stretch;
-    background-color: aquamarine;
+    margin-top:20px;
+}
+
+.cF hor-group section{
+    width:50%;
+   
 }
 
 .cF form ver-group{
-    width:50%;
     display:flex;
-    flex-direction: columm;
-    
+    flex-direction:column;
+    width: 50%;
+    margin-top:20px;
+    min-width: 300px;
+    flex-grow: 1;
+}
+
+.cF ver-group section{
+
 }
 
 .cF form  section{
     margin:10px;
-    
     display:flex;
-    flex-direction: row;
-    width:50%;
-    
+    flex-direction: row; 
 }
 
 .cF label{
@@ -73,4 +81,17 @@
     font-size:14px;
     border-radius: 12px;
     padding-left:10px;
+}
+
+.cF .footer {
+    background-color: rgb(206, 206, 206);
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+  
+}
+
+.cF button{
+    margin: 10px;
 }
