@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cats4life_grp2/static/css/main.1ccf82ef.css",
+    "main.js": "/cats4life_grp2/static/js/main.1a138d40.js",
+    "static/media/bsh.png": "/cats4life_grp2/static/media/bsh.f618b26217998b981f43.png",
+    "index.html": "/cats4life_grp2/index.html",
+    "main.1ccf82ef.css.map": "/cats4life_grp2/static/css/main.1ccf82ef.css.map",
+    "main.1a138d40.js.map": "/cats4life_grp2/static/js/main.1a138d40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ccf82ef.css",
+    "static/js/main.1a138d40.js"
+  ]
+}
