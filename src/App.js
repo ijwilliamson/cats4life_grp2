@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     const localStorageBasket = JSON.parse(
-      localStorage.getItem(_LocalStorageKey)
+      localStorage.getItem(_LocalStorageKey) ? localStorage.getItem(_LocalStorageKey) : JSON.stringify([]) 
     );
 
     if (basketItems) {

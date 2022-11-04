@@ -36,7 +36,10 @@ const Basket = (props) => {
 
   const clearBasket = () => {
     // remove all items from the basket
-    props.setBasketState([])
+    props.setBasketState([]);
+    // Clear local storage
+    const _LocalStorageKey = "cats4life.basket";
+    localStorage.setItem(_LocalStorageKey, JSON.stringify([]));
   }
 
   const overlayClass = () =>{
