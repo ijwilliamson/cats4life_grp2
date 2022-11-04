@@ -6,7 +6,7 @@ const CheckoutForm = () => {
         <div className="cF">
         <h1>Check out</h1>
         <form>
-            <frm-group>
+            <hor-group>
                 <section>
                     <label htmlFor="fName">First name </label>
                     <input id="fName"  type="text"/>
@@ -17,12 +17,31 @@ const CheckoutForm = () => {
                     <input id="sName"  type="text"/>
                 </section>
 
-            </frm-group>
-
-            <section>
+            </hor-group>
+           
+            <ver-group>
+                <section>
                     <label htmlFor="address1">Address </label>
                     <input id="address1"  type="text"/>
                 </section>
+                <section>
+                    <label htmlFor="address1"></label>
+                    <input id="address2"  type="text"/>
+                </section>
+                <section>
+                    <label htmlFor="address1"></label>
+                    <input id="address3"  type="text"/>
+                </section>
+                <section>
+                    <label htmlFor="town">Town / City</label>
+                    <input id="town"  type="text"/>
+                </section>
+                <section>
+                    <label htmlFor="postcode">Postcode</label>
+                    <input id="postcode"  type="text"/>
+                </section>
+            </ver-group>
+            
 
         </form>
      </div>

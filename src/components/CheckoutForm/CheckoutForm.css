@@ -12,36 +12,65 @@
 
 .cF h1{
     background-color: #4c24e1;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top:10px;
+    padding-bottom:10px;
     color: rgb(238, 238, 238);
     height: 25px;
     width: 100%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    border-radius: 10px 10px 0 0;
     
+}
+
+.cF hr{
+    margin-bottom:20px;
 }
 
 .cF form{
     border:2px solid #4c24e1;
-    width: calc(100% - 44px);
-    padding:20px;
-
-}
-
-.cF form frm-group{
+    width: calc(100% - 4px);
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
-.cF form frm-group section{
+.cF form hor-group{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: stretch;
+    background-color: aquamarine;
+}
 
+.cF form ver-group{
+    width:50%;
+    display:flex;
+    flex-direction: columm;
+    
+}
+
+.cF form  section{
+    margin:10px;
+    
+    display:flex;
+    flex-direction: row;
+    width:50%;
+    
 }
 
 .cF label{
     width:100px;
     display: inline-block;
+    
 }
 
 .cF input{
-    width: 200px;
+    flex-grow: 1;
+    height:30px;
+    font-size:14px;
+    border-radius: 12px;
+    padding-left:10px;
 }
