@@ -1,5 +1,6 @@
 import "./AboutPage.css";
 import cat from "../imgs/cat-bg.png";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -33,9 +34,11 @@ const AboutPage = () => {
               <p>
                 make a <span className="purple-text">difference</span>
               </p>
-              <button className="about-btn refresh-btn">
-                Cats available to adoption
-              </button>
+              <Link to="/">
+                <button className="about-btn refresh-btn">
+                  Cats available to adoption
+                </button>
+              </Link>
             </div>
           </div>
         </div>

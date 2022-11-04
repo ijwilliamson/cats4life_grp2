@@ -1,5 +1,6 @@
 import "./Hero.css";
 import bsh from "../../imgs/bsh.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
             life. Having a feline friend can also help to relieve stress and
             improve your heart health. Find today your new best friend!
           </p>
-          <button className="hero-btn refresh-btn">About us</button>
+          <Link to="/about">
+            <button className="hero-btn refresh-btn">About us</button>
+          </Link>
         </div>
         <div className="hero-right">
           <img src={bsh} alt="cat" />

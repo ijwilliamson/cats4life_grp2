@@ -20,11 +20,13 @@
   margin-right: 10%;
 }
 
-.logo {
+.logo a {
   display: flex;
   align-items: center;
 
+  color: #f8f9fc;
   font-size: 40px;
+  text-decoration: none;
   margin-left: 10%;
 }
 

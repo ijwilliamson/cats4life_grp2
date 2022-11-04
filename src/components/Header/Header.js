@@ -1,11 +1,14 @@
 import "./Header.css";
 import DropDownList from "../Dropdown/DropDownList";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   return (
     <div className="nav1 navbar-bg">
       <p className="logo">
-        <i class="fa-solid fa-cat"></i> Cats<strong>4Life</strong>
+        <Link to="/">
+          <i class="fa-solid fa-cat"></i> Cats<strong>4Life</strong>
+        </Link>
       </p>
       <div className="navbar-left">
         <div className="search-container basket-link">
